@@ -18,3 +18,11 @@ def ouvrir_fichier_local(nom_fichier, mode='r', encoding=None):
         return open(chemin_fichier, mode, encoding=encoding)
     else:
         return open(chemin_fichier, mode)
+
+def get_nom_fichier(filename):
+    nom_entree = os.path.splitext(filename)[0].lower()
+    return nom_entree
+
+def get_extension_fichier(filename):
+    filetype = os.path.splitext(filename)[1].lower()
+    return filetype
