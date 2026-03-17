@@ -2,7 +2,7 @@ import pandas as pd
 
 def inspecteur_gadget(df):
     # Header rapide
-    print(f"--- ANALYSE GADGET : {df.shape[0]} lignes | {df.shape[1]} colonnes ---")
+    print(f"--- {df.shape[0]} lignes | {df.shape[1]} colonnes | {df.duplicated().sum()} doublons ---")
     print("-" * 50)
     
     # Construction d'un tableau récapitulatif
@@ -20,4 +20,4 @@ def inspecteur_gadget(df):
     if potentielles_pks:
         print(f"Clé potentielle sur {', '.join(potentielles_pks)}")
     else:
-        print("Pas de colonne éligible en PK/FK")
+        print("Pas de colonne éligible en PK")
