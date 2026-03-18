@@ -1,8 +1,8 @@
 import pandas as pd
 
-def inspecteur_gadget(df):
+def sherlock(df):
     # Header rapide
-    print(f"--- {df.shape[0]} lignes | {df.shape[1]} colonnes | {df.duplicated().sum()} doublons ---")
+    print(f"-- {df.shape[0]} lignes | {df.shape[1]} colonnes | {df.duplicated().sum()} lignes doublons --")
     print("-" * 50)
     
     # Construction d'un tableau récapitulatif
