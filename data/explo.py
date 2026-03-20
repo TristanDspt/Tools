@@ -1,6 +1,20 @@
 import pandas as pd
 
 def sherlock(df):
+    """
+    Affiche un résumé rapide d'un DataFrame : dimensions, doublons, types,
+    valeurs manquantes et détection de clés primaires potentielles.
+
+    Args:
+        df (pd.DataFrame): Le DataFrame à analyser.
+
+    Returns:
+        None: Affiche les résultats dans la console.
+
+    Example:
+        >>> sherlock(df)
+        -- 100 lignes | 5 colonnes | 0 lignes doublons --
+    """
     # Header rapide
     print(f"-- {df.shape[0]} lignes | {df.shape[1]} colonnes | {df.duplicated().sum()} lignes doublons --")
     print("-" * 50)
