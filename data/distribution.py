@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from utils import verification_donnees
+from data.utils import verification_donnees
 
 def courbe_lorenz(df, var1, titre_x, titre_y):
     """
@@ -59,3 +59,5 @@ def courbe_lorenz(df, var1, titre_x, titre_y):
     plt.title(f"Courbe de Lorenz (Indice de Gini : {gini:.2f})", fontname='Arial' , fontweight='bold', pad=10, fontsize=16.5, x=0.45, ha='center')
     plt.tick_params(axis='x', labelsize=11)
     plt.tick_params(axis='y', labelsize=11)
+
+    plt.show()
