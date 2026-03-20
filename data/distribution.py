@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from utils import verification_donnees
 
-def lorenz(df, var1, titre_x, titre_y):
+def courbe_lorenz(df, var1, titre_x, titre_y):
     """
     Trace la courbe de Lorenz et calcule l'indice de Gini pour une variable quantitative.
     
