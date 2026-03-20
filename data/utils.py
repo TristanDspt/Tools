@@ -1,4 +1,4 @@
-def verification_donnees(df, var1, var2):
+def verification_donnees(df, var1, var2=None):
     """
     Vérifie les données pour s'assurer de la bonne exécution des tests statistiques.
     
@@ -14,12 +14,13 @@ def verification_donnees(df, var1, var2):
         - 'dtype_var2': Data Type de la variable 2
         - 'shape': Forme du DataFrame
     """
-    
-    resultats = {
-        'type_df': type(df).__name__,
-        'dtype_var1': df[var1].dtype if var1 in df.columns else None,
-        'dtype_var2': df[var2].dtype if var2 in df.columns else None,
-        'shape': df.shape
-    }
+
+    if var2 is not None:
+        resultats = {
+            'type_df': type(df).__name__,
+            'dtype_var1': df[var1].dtype if var1 in df.columns else None,
+            'dtype_var2': df[var2].dtype if var2 in df.columns else None,
+            'shape': df.shape
+        }
     
     return resultats
