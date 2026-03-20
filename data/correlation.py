@@ -153,6 +153,26 @@ def correlation_quanti_quanti(df, var1, var2, seuil=0.05, plot=True, report=True
 
 
 def correlation_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
+    """
+    Analyse la corrélation entre deux variables qualitatives via le test du Chi².
+    Calcule le V de Cramer pour mesurer l'intensité du lien.
+
+    Args:
+        df (pd.DataFrame): DataFrame contenant les données.
+        var1 (str): Nom de la première variable qualitative.
+        var2 (str): Nom de la deuxième variable qualitative.
+        seuil (float): Seuil de significativité (par défaut 0.05).
+        plot (bool): Affiche les graphiques si True (par défaut True).
+        report (bool): Affiche le rapport final si True (par défaut True).
+
+    Returns:
+        None: Affiche les résultats dans la console.
+
+    Example:
+        >>> correlation_quali_quali(df, 'genre', 'categorie')
+        >>> correlation_quali_quali(df, 'genre', 'categorie', seuil=0.01, plot=False)
+    """
+    
     # Initialisation de la fonction --------------------------------------
     print("=" * 70)
     print(f"📊 ANALYSE DE CORRÉLATION")
