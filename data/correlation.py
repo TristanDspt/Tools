@@ -172,7 +172,6 @@ def correlation_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
         >>> correlation_quali_quali(df, 'genre', 'categorie')
         >>> correlation_quali_quali(df, 'genre', 'categorie', seuil=0.01, plot=False)
     """
-    
     # Initialisation de la fonction --------------------------------------
     print("=" * 70)
     print(f"📊 ANALYSE DE CORRÉLATION")
