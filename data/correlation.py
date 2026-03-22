@@ -1,29 +1,3 @@
-"""
-Outils d'analyse de corrélations.
-
-Choisir le bon test selon les types de variables :
-
-+------------------+--------------------+------------------+----------------------+
-| Type             | Test               | Indicateur       | Visualisation        |
-+------------------+--------------------+------------------+----------------------+
-| Quali / Quali    | Chi²               | χ², p-value      | Heatmap / Barplot    |
-| Quanti / Quanti  | Pearson / Spearman | R², p-value      | Nuage de points      |
-| Quanti / Quali   | ANOVA (ou KS)      | η², F, p-value   | Boxplot              |
-+------------------+--------------------+------------------+----------------------+
-
-Exemples :
-    - Chi²    : Genre ↔ Catégories
-    - Pearson : Âge ↔ Montant total
-    - ANOVA   : Âge ↔ Catégories
-
-Notes :
-    - Pearson   : corrélation linéaire, sensible aux outliers.
-    - Spearman  : version robuste basée sur les rangs, à préférer si distribution non normale.
-    - KS (Kolmogorov-Smirnov) : alternative non-paramétrique à l'ANOVA.
-    - p-value < 0.05 → corrélation statistiquement significative (seuil classique).
-"""
-
-# --------------------------------------------------------------------------------------------------------------------
 
 # Import des bibliothèques
 import pandas as pd
@@ -255,6 +229,7 @@ def corr_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
             print(f"\n⚠️ CONCLUSION : Il n'existe pas de corrélation statistiquement significative entre '{var1}' et '{var2}' (p >= {seuil}).")
 
 
+
 def corr_quanti_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
     """
     Analyse la corrélation entre une variable quantitative et une variable qualitative.
@@ -279,7 +254,7 @@ def corr_quanti_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
         >>> corr_quanti_quali(df, 'montant', 'categorie')
         >>> corr_quanti_quali(df, 'categorie', 'montant', plot=False)
     """
-    
+
     # Initialisation de la fonction --------------------------------------
     print("=" * 70)
     print(f"📊 ANALYSE DE CORRÉLATION")
@@ -301,7 +276,6 @@ def corr_quanti_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
             var_quanti = df[var]
         elif df[var].dtype in liste_quali:
             var_quali = df[var]
-
 
     if verif['type_df'] == 'DataFrame' and var_quanti is not None and var_quali is not None and verif['shape'][0] > 2:
         print(f"✅ Vérification des données : OK, les variables sont quantitatives et qualitatives et le dataset est suffisant pour l'analyse.")
