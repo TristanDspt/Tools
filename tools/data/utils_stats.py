@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.stats import shapiro, normaltest
+from tools.data.correlation import corr_quanti_quanti, corr_quali_quali, corr_quanti_quali
 
 def verification_donnees(df, var1, var2=None):
     """
@@ -88,3 +89,43 @@ def eta_squared(groupes):
     ss_between = sum(len(g) * (g.mean() - grand_mean) ** 2 for g in groupes)
     ss_total = sum(((g - grand_mean) ** 2).sum() for g in groupes)
     return ss_between / ss_total
+
+
+def corr_pilote(df, var1, var2, seuil=0.05, plot=True, report=True):
+    """
+    Fonction dispatcher qui analyse automatiquement la corrélation entre deux variables
+    en sélectionnant le test approprié selon leurs types.
+
+    Args:
+        df (pd.DataFrame): DataFrame contenant les données.
+        var1 (str): Nom de la première variable.
+        var2 (str): Nom de la deuxième variable.
+        seuil (float): Seuil de significativité (par défaut 0.05).
+        plot (bool): Affiche les graphiques si True (par défaut True).
+        report (bool): Affiche le rapport final si True (par défaut True).
+
+    Returns:
+        None: Affiche les résultats dans la console.
+
+    Example:
+        >>> corr_pilote(df, 'age', 'montant')
+        >>> corr_pilote(df, 'genre', 'categorie', seuil=0.01, plot=False)
+        >>> corr_pilote(df, 'montant', 'categorie')
+    """
+
+    liste_quanti = ['int64', 'float64']
+    liste_quali = ['object', 'category']
+
+    famille_var1 = 'quanti' if df[var1].dtype in liste_quanti else 'quali' if df[var1].dtype in liste_quali else None
+    famille_var2 = 'quanti' if df[var2].dtype in liste_quanti else 'quali' if df[var2].dtype in liste_quali else None
+
+    familles = {famille_var1, famille_var2}
+
+    if familles == {'quanti', 'quanti'}:
+        corr_quanti_quanti(df, var1, var2, seuil, plot, report)
+    elif familles == {'quali', 'quali'}:
+        corr_quali_quali(df, var1, var2, seuil, plot, report)
+    elif familles == {'quanti', 'quali'}:
+        corr_quanti_quali(df, var1, var2, seuil, plot, report)
+    else:
+        print("❌ Erreur les variables ne sont ni quantitave ni qualitative")

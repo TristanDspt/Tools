@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from data.utils_stats import verification_donnees
+from tools.data.utils_stats import verification_donnees
 
 def courbe_lorenz(df, var1, titre_x, titre_y):
     """

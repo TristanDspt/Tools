@@ -10,8 +10,8 @@ import plotly.express as px
 from scipy.stats import pearsonr, spearmanr, chi2_contingency, ttest_ind, mannwhitneyu, f_oneway, levene, kruskal
 
 # Fichiers de dépendances
-from data.utils_stats import verification_donnees, verification_normalite, cohen_d, eta_squared
-from data.utils_viz import plot_normalite
+from tools.data.utils_stats import verification_donnees, verification_normalite, cohen_d, eta_squared
+from tools.data.utils_viz import plot_normalite
 
 
 def corr_quanti_quanti(df, var1, var2, seuil=0.05, plot=True, report=True):
