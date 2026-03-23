@@ -10,8 +10,8 @@ import plotly.express as px
 from scipy.stats import pearsonr, spearmanr, chi2_contingency, ttest_ind, mannwhitneyu, f_oneway, levene, kruskal
 
 # Fichiers de dépendances
-from tools.data.utils_stats import verification_donnees, verification_normalite, cohen_d, eta_squared
-from tools.data.utils_viz import plot_normalite
+from .utils_stats import verification_donnees, verification_normalite, cohen_d, eta_squared
+from .utils_viz import plot_normalite
 
 
 def corr_quanti_quanti(df, var1, var2, seuil=0.05, plot=True, report=True):
@@ -379,3 +379,44 @@ def corr_quanti_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
             print(f"\n✅ CONCLUSION: Il existe une corrélation statistiquement significative entre '{var1}' et '{var2}' (p < {seuil}).")
         else:
             print(f"\n⚠️ CONCLUSION : Il n'existe pas de corrélation statistiquement significative entre '{var1}' et '{var2}' (p >= {seuil}).")
+
+
+
+def corr_pilote(df, var1, var2, seuil=0.05, plot=True, report=True):
+    """
+    Fonction dispatcher qui analyse automatiquement la corrélation entre deux variables
+    en sélectionnant le test approprié selon leurs types.
+
+    Args:
+        df (pd.DataFrame): DataFrame contenant les données.
+        var1 (str): Nom de la première variable.
+        var2 (str): Nom de la deuxième variable.
+        seuil (float): Seuil de significativité (par défaut 0.05).
+        plot (bool): Affiche les graphiques si True (par défaut True).
+        report (bool): Affiche le rapport final si True (par défaut True).
+
+    Returns:
+        None: Affiche les résultats dans la console.
+
+    Example:
+        >>> corr_pilote(df, 'age', 'montant')
+        >>> corr_pilote(df, 'genre', 'categorie', seuil=0.01, plot=False)
+        >>> corr_pilote(df, 'montant', 'categorie')
+    """
+
+    liste_quanti = ['int64', 'float64']
+    liste_quali = ['object', 'category']
+
+    famille_var1 = 'quanti' if df[var1].dtype in liste_quanti else 'quali' if df[var1].dtype in liste_quali else None
+    famille_var2 = 'quanti' if df[var2].dtype in liste_quanti else 'quali' if df[var2].dtype in liste_quali else None
+
+    familles = {famille_var1, famille_var2}
+
+    if familles == {'quanti', 'quanti'}:
+        corr_quanti_quanti(df, var1, var2, seuil, plot, report)
+    elif familles == {'quali', 'quali'}:
+        corr_quali_quali(df, var1, var2, seuil, plot, report)
+    elif familles == {'quanti', 'quali'}:
+        corr_quanti_quali(df, var1, var2, seuil, plot, report)
+    else:
+        print("❌ Erreur les variables ne sont ni quantitave ni qualitative")
