@@ -207,7 +207,7 @@ def corr_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
                 linewidths=2
                 )
 
-        plt.title("Corrélation Chi2", fontname='Arial' , fontweight='bold', fontsize=16, x=0.51, ha='center')
+        plt.title("Corrélation Chi²", fontname='Arial' , fontweight='bold', fontsize=16, x=0.51, ha='center')
         plt.tick_params(axis='x', labelsize=11.5)
         plt.tick_params(axis='y', labelsize=11.5)
 
@@ -219,7 +219,8 @@ def corr_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
         print(f"=" * 70)
         print(f"📊 RAPPORT DE CORRÉLATION ENTRE '{var1}' ET '{var2}'")
         print("=" * 70)
-        print(f"🔍 Type de corrélation utilisée : Chi2")
+        print(f"🔍 Type de corrélation utilisée : Chi²")
+        print(f"📊 Chi² : {chi2:.4f}")
         print(f"📊 V de Cramer : {v_cramer:.4f}, corrélation {'faible' if v_cramer <= 0.1 else 'modérée' if 0.1 < v_cramer <= 0.3 else 'forte'}")
         print(f"📊 P-value : {p_value:.4f}")
 
