@@ -16,7 +16,7 @@ def sherlock(df):
         -- 100 lignes | 5 colonnes | 0 lignes doublons --
     """
     # Header rapide
-    print(f"-- {df.shape[0]} lignes | {df.shape[1]} colonnes | {df.duplicated().sum()} lignes doublons --")
+    print(f"{df.shape[0]} lignes | {df.shape[1]} colonnes | {df.duplicated().sum()} lignes doublons")
     print("-" * 50)
     
     # Construction d'un tableau récapitulatif
