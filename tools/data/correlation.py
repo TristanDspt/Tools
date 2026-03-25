@@ -37,7 +37,7 @@ def corr_quanti_quanti(df, var1, var2, seuil=0.05, plot=True, report=True):
 
     # Initialisation de la fonction --------------------------------------
     print("=" * 70)
-    print(f"📊 ANALYSE DE CORRÉLATION")
+    print(f"📊 ANALYSE DE CORRÉLATION : QUANTI / QUANTI")
     print("=" * 70)
 
 
@@ -99,6 +99,7 @@ def corr_quanti_quanti(df, var1, var2, seuil=0.05, plot=True, report=True):
             x=var1,
             y=var2,
             trendline="ols",
+            trendline_color_override="red",
             marginal_x='histogram',
             marginal_y='histogram',
             title=f'Distribution conjointe : {var1} et {var2}',
@@ -148,7 +149,7 @@ def corr_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
     """
     # Initialisation de la fonction --------------------------------------
     print("=" * 70)
-    print(f"📊 ANALYSE DE CORRÉLATION")
+    print(f"📊 ANALYSE DE CORRÉLATION : QUALI / QUALI")
     print("=" * 70)
 
 
@@ -220,7 +221,6 @@ def corr_quali_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
         print(f"📊 RAPPORT DE CORRÉLATION ENTRE '{var1}' ET '{var2}'")
         print("=" * 70)
         print(f"🔍 Type de corrélation utilisée : Chi²")
-        print(f"📊 Chi² : {chi2:.4f}")
         print(f"📊 V de Cramer : {v_cramer:.4f}, corrélation {'faible' if v_cramer <= 0.1 else 'modérée' if 0.1 < v_cramer <= 0.3 else 'forte'}")
         print(f"📊 P-value : {p_value:.4f}")
 
@@ -258,7 +258,7 @@ def corr_quanti_quali(df, var1, var2, seuil=0.05, plot=True, report=True):
 
     # Initialisation de la fonction --------------------------------------
     print("=" * 70)
-    print(f"📊 ANALYSE DE CORRÉLATION")
+    print(f"📊 ANALYSE DE CORRÉLATION : QUANTI / QUALI")
     print("=" * 70)
 
 
