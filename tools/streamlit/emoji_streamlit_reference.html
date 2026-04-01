@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emoji Streamlit Reference</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 1.5rem; font-family: system-ui, sans-serif; background: #fff; color: #111; }
+  h1 { font-size: 18px; font-weight: 500; margin: 0 0 1.5rem; }
+  h2 { font-size: 12px; font-weight: 500; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin: 1.5rem 0 0.5rem; padding-bottom: 6px; border-bottom: 0.5px solid #e5e5e5; }
+  h2:first-of-type { margin-top: 0; }
+  .grid { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0.5rem; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; background: #f5f5f5; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 5px 10px; cursor: pointer; transition: background 0.12s; font-size: 14px; color: #111; user-select: none; }
+  .chip:hover { background: #ebebeb; border-color: #ccc; }
+  .chip .em { font-size: 18px; line-height: 1; }
+  .chip .code { font-family: monospace; font-size: 11px; color: #666; }
+  .toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: #fff; border: 0.5px solid #ccc; border-radius: 8px; padding: 8px 16px; font-size: 13px; color: #111; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 99; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .toast.show { opacity: 1; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; color: #f0f0f0; }
+    .chip { background: #2a2a2a; border-color: #3a3a3a; color: #f0f0f0; }
+    .chip:hover { background: #333; border-color: #555; }
+    .chip .code { color: #aaa; }
+    h2 { color: #aaa; border-color: #333; }
+    .toast { background: #2a2a2a; border-color: #555; color: #f0f0f0; }
+  }
+</style>
+</head>
+<body>
+
+<h1>🎨 Emoji Streamlit Reference</h1>
+
+<h2>📊 Data / IA / Dev</h2>
+<div class="grid" id="g1"></div>
+
+<h2>💼 Business / App</h2>
+<div class="grid" id="g2"></div>
+
+<h2>👤 Utilisateurs / Clients</h2>
+<div class="grid" id="g3"></div>
+
+<h2>✅ Statuts / Alertes</h2>
+<div class="grid" id="g4"></div>
+
+<h2>🧭 Navigation / UI</h2>
+<div class="grid" id="g5"></div>
+
+<h2>💰 Finance / KPI</h2>
+<div class="grid" id="g6"></div>
+
+<h2>⏱️ Temps / Calendrier</h2>
+<div class="grid" id="g7"></div>
+
+<h2>🌍 Divers utiles</h2>
+<div class="grid" id="g8"></div>
+
+<div class="toast" id="toast">Copié !</div>
+
+<script>
+const groups = {
+  g1: [
+    ["📊","bar_chart"],["📈","chart_with_upwards_trend"],["📉","chart_with_downwards_trend"],
+    ["🧠","brain"],["🤖","robot_face"],["💻","computer"],["🖥️","desktop_computer"],
+    ["⚙️","gear"],["🔧","wrench"],["🔬","microscope"],["🗄️","file_cabinet"],
+    ["📂","open_file_folder"],["📁","file_folder"],["🗃️","card_file_box"],
+    ["🔢","1234"],["🔍","mag"],["🔎","mag_right"],["📝","memo"],
+    ["📌","pushpin"],["📍","round_pushpin"],["🧩","jigsaw"],["⚡","zap"],
+  ],
+  g2: [
+    ["💼","briefcase"],["🗂️","card_index_dividers"],["📦","package"],
+    ["🛒","shopping_cart"],["🏷️","label"],["🏪","convenience_store"],
+    ["🏢","office_building"],["📋","clipboard"],["📑","bookmark_tabs"],
+    ["📃","page_with_curl"],["🖨️","printer"],["📠","fax"],["📬","mailbox_with_mail"],
+    ["📧","e-mail"],["📣","mega"],["📢","loudspeaker"],
+  ],
+  g3: [
+    ["👤","bust_in_silhouette"],["👥","busts_in_silhouette"],
+    ["🧑‍💼","office_worker"],["👨‍💼","man_office_worker"],["👩‍💼","woman_office_worker"],
+    ["🤝","handshake"],["🙋","raising_hand"],["🧑‍🤝‍🧑","people_holding_hands"],
+    ["👑","crown"],["🎯","dart"],["🌟","star2"],["⭐","star"],
+  ],
+  g4: [
+    ["✅","white_check_mark"],["❌","x"],["⚠️","warning"],["🚨","rotating_light"],
+    ["🔴","red_circle"],["🟠","orange_circle"],["🟡","yellow_circle"],
+    ["🟢","green_circle"],["🔵","blue_circle"],["⛔","no_entry"],
+    ["🚫","no_entry_sign"],["💡","bulb"],["🔔","bell"],["🔕","no_bell"],
+    ["ℹ️","information_source"],["❓","question"],["❗","exclamation"],
+    ["👍","thumbsup"],["👎","thumbsdown"],
+  ],
+  g5: [
+    ["🏠","house"],["🔙","back"],["⬅️","arrow_left"],["➡️","arrow_right"],
+    ["⬆️","arrow_up"],["⬇️","arrow_down"],["🔄","arrows_counterclockwise"],
+    ["↩️","leftwards_arrow_with_hook"],["📤","outbox_tray"],["📥","inbox_tray"],
+    ["🔗","link"],["🧭","compass"],["📌","pushpin"],["🔒","lock"],["🔓","unlock"],
+    ["🔑","key"],["🗝️","old_key"],["🧰","toolbox"],["🗑️","wastebasket"],
+    ["➕","heavy_plus_sign"],["➖","heavy_minus_sign"],["✏️","pencil2"],
+  ],
+  g6: [
+    ["💰","moneybag"],["💵","dollar"],["💶","euro"],["💷","pound"],
+    ["💳","credit_card"],["🏦","bank"],["📈","chart_with_upwards_trend"],
+    ["💹","chart"],["🪙","coin"],["💎","gem"],["🎁","gift"],
+    ["🏆","trophy"],["🥇","first_place_medal"],["🎖️","medal_military"],
+  ],
+  g7: [
+    ["📅","date"],["📆","calendar"],["🗓️","spiral_calendar_pad"],
+    ["⏰","alarm_clock"],["⏱️","stopwatch"],["⌚","watch"],["🕐","clock1"],
+    ["⏳","hourglass"],["⌛","hourglass_flowing_sand"],["🔁","repeat"],
+    ["🔂","repeat_one"],["🆕","new"],["🆙","up"],
+  ],
+  g8: [
+    ["🌍","earth_africa"],["🌎","earth_americas"],["🌏","earth_asia"],
+    ["📍","round_pushpin"],["🗺️","world_map"],["🚀","rocket"],["🎉","tada"],
+    ["🎊","confetti_ball"],["🧪","test_tube"],["⚗️","alembic"],["🌡️","thermometer"],
+    ["💬","speech_balloon"],["💭","thought_balloon"],["🗨️","left_speech_bubble"],
+    ["📻","radio"],["📡","satellite"],["🖱️","computer_mouse"],["⌨️","keyboard"],
+  ],
+};
+
+let toastTimer;
+function copy(text) {
+  navigator.clipboard.writeText(`:${text}:`).then(() => {
+    const t = document.getElementById('toast');
+    t.textContent = `Copié : :${text}:`;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 1600);
+  });
+}
+
+Object.entries(groups).forEach(([id, items]) => {
+  const el = document.getElementById(id);
+  items.forEach(([em, code]) => {
+    const chip = document.createElement('div');
+    chip.className = 'chip';
+    chip.innerHTML = `<span class="em">${em}</span><span class="code">:${code}:</span>`;
+    chip.onclick = () => copy(code);
+    el.appendChild(chip);
+  });
+});
+</script>
+</body>
+</html>
