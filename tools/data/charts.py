@@ -16,7 +16,7 @@ HEIGHT   = 500
 
 
 # ── Bar ────────────────────────────────────────────────────────────────────────
-def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, palette=None):
+def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, palette=None, barmode='group'):
     """
     Trace un barplot.
 
@@ -29,6 +29,7 @@ def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, pale
         horizontal (bool): Barres horizontales si True.
         text_auto (bool): Affiche les valeurs sur les barres.
         palette: Couleur unique '#2196F3', liste ['red','blue'], ou palette qualitative px.colors.qualitative.D3.
+        barmode (str): Mode d'affichage des barres. 'group' (défaut) ou 'stack'.
 
     Returns:
         fig: Figure Plotly.
@@ -64,7 +65,7 @@ def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, pale
         fig.add_trace(go.Bar(
             x=x_val, y=y_val,
             orientation=orientation,
-            marker_color=palette if isinstance(palette, str) else (palette[0] if isinstance(palette, list) else '#636EFA'),
+            marker_color=palette if isinstance(palette, str) else (palette if isinstance(palette, list) else '#636EFA'),
             text=y_val if text_auto else None,
             textposition='outside',
             texttemplate='%{value:,.0f}',
@@ -75,7 +76,7 @@ def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, pale
         title=titre, 
         template=TEMPLATE, 
         height=HEIGHT, 
-        barmode='group', 
+        barmode=barmode, 
         separators=". ", 
         hovermode='y unified' if horizontal else 'x unified',
         )
@@ -172,7 +173,7 @@ def line(df, x, y, color=None, titre=None, markers=False, palette=None):
             hovertemplate='%{x} : %{y:,.0f}<extra></extra>',
         ))
 
-    fig.update_layout(title=titre, template=TEMPLATE, height=HEIGHT, hovermode='x unified')
+    fig.update_layout(title=titre, template=TEMPLATE, height=HEIGHT, hovermode='x unified', separators=". ")
     return fig
 
 
