@@ -65,7 +65,10 @@ def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, pale
         fig.add_trace(go.Bar(
             x=x_val, y=y_val,
             orientation=orientation,
-            marker_color=palette if isinstance(palette, str) else (palette if isinstance(palette, list) else '#636EFA'),
+            marker_color=(palette if isinstance(palette, str) 
+                else (palette if len(palette) == len(df) 
+                else palette[0] if isinstance(palette, list) 
+                else '#636EFA')),
             text=y_val if text_auto else None,
             textposition='outside',
             texttemplate='%{value:,.0f}',
