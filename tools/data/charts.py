@@ -55,9 +55,9 @@ def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, pale
                 orientation=orientation,
                 marker_color=couleurs[i % len(couleurs)],
                 text=y_val if text_auto else None,
-                textposition='outside',
-                texttemplate='%{value:,.0f}',
-                hovertemplate='%{y} : %{x:,.0f}<extra></extra>' if horizontal else '%{x} : %{y:,.0f}<extra></extra>',
+                textposition='outside'if text_auto else 'none',
+                texttemplate='%{value:,.0f}'if text_auto else 'none',
+                hovertemplate='%{y} : %{x:,.1f}<extra></extra>' if horizontal else '%{x} : %{y:,.1f}<extra></extra>',
             ))
     else:
         x_val = df[y] if horizontal else df[x]
@@ -70,9 +70,9 @@ def bar(df, x, y, color=None, titre=None, horizontal=False, text_auto=True, pale
                 else palette[0] if isinstance(palette, list) 
                 else '#636EFA')),
             text=y_val if text_auto else None,
-            textposition='outside',
-            texttemplate='%{value:,.0f}',
-            hovertemplate='%{y} : %{x:,.0f}<extra></extra>' if horizontal else '%{x} : %{y:,.0f}<extra></extra>',
+            textposition='outside'if text_auto else 'none',
+            texttemplate='%{value:,.0f}'if text_auto else 'none',
+            hovertemplate='%{y} : %{x:,.1f}<extra></extra>' if horizontal else '%{x} : %{y:,.1f}<extra></extra>',
         ))
 
     fig.update_layout(
@@ -114,7 +114,7 @@ def donut(df, names, values, titre=None, hole=0.6, palette=None):
         marker_colors=couleurs,
         textposition='inside',
         textinfo='percent+label',
-        hovertemplate='%{label} : %{value:,.0f}<extra></extra>',
+        hovertemplate='%{label} : %{value:,.1f}<extra></extra>',
     ))
     fig.update_layout(title=titre, template=TEMPLATE, height=HEIGHT, separators=". ")
     return fig
@@ -154,7 +154,7 @@ def line(df, x, y, color=None, titre=None, markers=False, palette=None):
                 mode=mode,
                 name=str(groupe),
                 line_color=couleurs[i % len(couleurs)],
-                hovertemplate='%{x} : %{y:,.0f}<extra></extra>',
+                hovertemplate='%{x} : %{y:,.1f}<extra></extra>',
             ))
     elif isinstance(y, list):
         for i, col in enumerate(y):
@@ -164,7 +164,7 @@ def line(df, x, y, color=None, titre=None, markers=False, palette=None):
                 mode=mode,
                 name=col,
                 line_color=c,
-                hovertemplate='%{x} : %{y:,.0f}<extra></extra>',
+                hovertemplate='%{x} : %{y:,.1f}<extra></extra>',
             ))
     else:
         c = palette if isinstance(palette, str) else couleurs[0]
@@ -173,7 +173,7 @@ def line(df, x, y, color=None, titre=None, markers=False, palette=None):
             mode=mode,
             name=y,
             line_color=c,
-            hovertemplate='%{x} : %{y:,.0f}<extra></extra>',
+            hovertemplate='%{x} : %{y:,.1f}<extra></extra>',
         ))
 
     fig.update_layout(title=titre, template=TEMPLATE, height=HEIGHT, hovermode='x unified', separators=". ")
@@ -296,7 +296,7 @@ def histo(df, x, color=None, titre=None, bins=30, barmode='overlay', palette=Non
                 nbinsx=bins,
                 marker_color=couleurs[i % len(couleurs)],
                 opacity=0.7,
-                hovertemplate='%{x} : %{y:,.0f}<extra></extra>',
+                hovertemplate='%{x} : %{y:,.1f}<extra></extra>',
             ))
     else:
         c = palette if isinstance(palette, str) else couleurs[0]
@@ -305,7 +305,7 @@ def histo(df, x, color=None, titre=None, bins=30, barmode='overlay', palette=Non
             nbinsx=bins,
             marker_color=c,
             opacity=0.7,
-            hovertemplate='%{x} : %{y:,.0f}<extra></extra>',
+            hovertemplate='%{x} : %{y:,.1f}<extra></extra>',
         ))
 
     fig.update_layout(title=titre, template=TEMPLATE, height=HEIGHT, barmode=barmode, bargap=0.05, hovermode='x unified')
