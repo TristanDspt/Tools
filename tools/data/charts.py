@@ -1,3 +1,33 @@
+"""
+charts.py — Fonctions de visualisation prêtes à l'emploi
+=========================================================
+
+Toutes les fonctions prennent un DataFrame pandas et retournent une figure Plotly
+(sauf heatmap_corr qui affiche directement via matplotlib/seaborn).
+
+Fonctions disponibles
+---------------------
+  bar(df, x, y, ...)          Barplot vertical ou horizontal, groupé ou empilé.
+  donut(df, names, values, .) Donut chart (hole=0 pour un camembert).
+  line(df, x, y, ...)         Line chart, mono ou multi-séries, avec marqueurs.
+  scatter(df, x, y, ...)      Nuage de points avec trendline OLS optionnelle.
+  box(df, x, y, ...)          Boxplot groupé avec affichage des outliers.
+  histo(df, x, ...)           Histogramme, mono ou multi-groupes.
+  heatmap_corr(df, ...)       Matrice de corrélation (triangle inférieur, seaborn).
+
+Paramètre `palette` — référence rapide
+---------------------------------------
+  Couleur unique   : '#2196F3'
+  Liste de couleurs: ['#2196F3', '#FF5722', ...]
+  Catégorielle     : px.colors.qualitative.D3 / Plotly / G10 / T10 / Dark24
+  Séquentielle     : 'Blues', 'Viridis', 'Plasma', 'Cividis', 'Turbo'
+  Divergente       : 'RdBu', 'RdYlGn', 'Spectral', 'coolwarm'
+
+Config globale
+--------------
+  TEMPLATE = 'plotly_white'   (modifiable en haut du fichier)
+  HEIGHT   = 500 px
+"""
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
