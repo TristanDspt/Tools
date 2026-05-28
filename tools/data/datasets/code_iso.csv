@@ -1,0 +1,226 @@
+﻿iso2,iso3,country,pays,enclave,continent,lat,lon,langue
+AW,ABW,Aruba,Aruba,0,America,12.55,-70.1,Dutch
+AF,AFG,Afghanistan,Afghanistan,1,Asia,34.51667,69.2,Persian
+AO,AGO,Angola,Angola,0,Africa,-8.833333,13.25,Portuguese
+AI,AIA,Anguilla,Anguilla,0,America,18.21667,-63.06667,English
+AL,ALB,Albania,Albanie,0,Europe,41.33333,19.81667,Albanian
+AD,AND,Andorra,Andorre,0,Europe,42.5,1.5,Catalan
+AN,ANT,Netherland Antilles,Antilles néerlandaises,0,America,12.1,-68.93333,Dutch
+AE,ARE,United Arab Emirates,Emirats arabes unis,0,Asia,24.46667,54.41667,Arabic
+AR,ARG,Argentina,Argentine,0,America,-34.66667,-58.5,Spanish
+AM,ARM,Armenia,Arménie,1,Asia,40.18333,44.5,Armenian
+TF,ATF,French Southern Antartic territories,Terres australes françaises,0,No,-66.66666,-140.0,French
+AG,ATG,Antigua and Barbuda,Antigua-et-Barbuda,0,America,17.13333,-61.83333,English
+AU,AUS,Australia,Australie,0,Pacific,-35.3,149.133,English
+AT,AUT,Austria,Autriche,1,Europe,48.21667,16.36667,German
+AZ,AZE,Azerbaijan,Azerbaïdjan,1,Asia,40.36666,49.88334,Azeri
+BI,BDI,Burundi,Burundi,1,Africa,-3.366667,29.31667,French
+BE,BEL,Belgium and Luxembourg,Belgique et Luxembourg,0,Europe,50.83333,4.35,Dutch
+BJ,BEN,Benin,Bénin,0,Africa,6.5,2.783333,French
+BF,BFA,Burkina Faso,Burkina Faso,1,Africa,12.33333,-1.666667,French
+BD,BGD,Bangladesh,Bangladesh,0,Asia,23.7,90.36667,Bengali
+BG,BGR,Bulgaria,Bulgarie,0,Europe,42.66667,23.3,Bulgarian
+BH,BHR,Bahrain,Bahreïn,0,Asia,26.2,50.63334,Arabic
+BS,BHS,Bahamas,Bahamas,0,America,25.08333,-77.33334,English
+BA,BIH,Bosnia and Herzegovina,Bosnie-Herzégovine,0,Europe,43.86666,18.43333,Serbo-Croatian
+BY,BLR,Belarus,Biélorussie,0,Europe,53.85,27.5,Belarussian
+BZ,BLZ,Belize,Belize,0,America,17.21667,-88.8,English
+BM,BMU,Bermuda,Bermudes,0,America,32.3,-64.8,English
+BO,BOL,Bolivia,Bolivie,1,America,-19.083,-65.25,Spanish
+BR,BRA,Brazil,Brésil,0,America,-15.78,-47.91,Portuguese
+BB,BRB,Barbados,Barbade,0,America,13.1,-59.61666,English
+BN,BRN,Brunei Darussalam,Brunéi Darussalam,0,Asia,4.933333,114.9667,Malay
+BT,BTN,Bhutan,Bhoutan,1,Asia,27.53333,89.75,Burmese
+BW,BWA,Botswana,Botswana,1,Africa,-24.75,25.91667,English
+CF,CAF,Central African Republic,Centrafricaine (la République),1,Africa,4.383333,18.61667,French
+CA,CAN,Canada,Canada,0,America,45.42,-75.71,English
+CC,CCK,Cocos (Keeling) Islands,Îles Cocos (Keeling),0,Pacific,-12.5,96.83334,Malay
+CH,CHE,Switzerland,Suisse,1,Europe,46.95,7.433333,German
+CL,CHL,Chile,Chili,0,America,-33.5,-70.66666,Spanish
+CN,CHN,China,Chine,0,Asia,39.91667,116.4333,Chinese
+CI,CIV,Côte d'Ivoire,Côte d'Ivoire,0,Africa,6.82,-5.28,French
+CM,CMR,Cameroon,Cameroun,0,Africa,3.85,11.51667,French
+CG,COG,Congo,Congo,0,Africa,-4.233333,15.23333,French
+CK,COK,Cook Islands,Îles Cook,0,Pacific,-21.2,-159.7667,English
+CO,COL,Colombia,Colombie,0,America,4.633333,-75.06667,Spanish
+KM,COM,Comoros,Comores,0,Africa,-11.66667,43.26667,Arabic
+CV,CPV,Cape Verde,Cap-Vert,0,Africa,14.91667,-23.5,Portuguese
+CR,CRI,Costa Rica,Costa Rica,0,America,9.983334,-84.06667,Spanish
+CU,CUB,Cuba,Cuba,0,America,23.11667,-82.41666,Spanish
+CX,CXR,Christmas Island,Île Christmas,0,Pacific,-10.41667,105.7167,English
+KY,CYM,Cayman Islands,Îles Caïmans,0,America,19.3,-81.38333,English
+CY,CYP,Cyprus,Chypre,0,Europe,35.15,33.35,Greek
+CZ,CZE,Czech Republic,Tchèque (la République),1,Europe,50.1,14.43333,Czech
+DE,DEU,Germany,Allemagne,0,Europe,52.533,13.417,German
+DJ,DJI,Djibouti,Djibouti,0,Africa,11.6,43.15,French
+DM,DMA,Dominica,Dominique,0,America,15.3,-61.38334,English
+DK,DNK,Denmark,Danemark,0,Europe,55.66667,12.58333,Danish
+DO,DOM,Dominican Republic,Dominicaine (la République),0,America,18.5,-69.78333,Spanish
+DZ,DZA,Algeria,Algérie,0,Africa,36.83333,3.0,Arabic
+EC,ECU,Ecuador,Equateur,0,America,-0.2333333,-78.5,Spanish
+EG,EGY,Egypt,Egypte,0,Africa,30.05,31.25,Arabic
+ER,ERI,Eritrea,Erythrée,0,Africa,15.33333,38.88334,English
+EH,ESH,Western Sahara,Sahara occidental,0,Africa,27.16667,-13.18333,Arabic
+ES,ESP,Spain,Espagne,0,Europe,40.41667,-3.716667,Spanish
+EE,EST,Estonia,Estonie,0,Europe,59.41667,24.75,Estonian
+ET,ETH,Ethiopia,Ethiopie,1,Africa,9.05,38.83333,Amharic
+FI,FIN,Finland,Finlande,0,Europe,60.13334,25.0,Swedish
+FJ,FJI,Fiji,Fidji,0,Pacific,-18.13333,178.4167,English
+FK,FLK,Falkland Islands,Îles Falkland,0,America,-51.7,-57.85,English
+FR,FRA,France,France,0,Europe,48.86666,2.333333,French
+FO,FRO,Faroe Islands,Îles Féroé,0,Europe,62.01667,-6.766667,Faroese
+FM,FSM,Micronesia (Federated States of),Micronésie (Etats fédérés de),0,Pacific,6.916667,158.25,English
+GA,GAB,Gabon,Gabon,0,Africa,0.3833333,9.416667,French
+GB,GBR,United Kingdom,Royaume-Uni,0,Europe,51.5,-0.1666667,English
+GE,GEO,Georgia,Géorgie,0,Asia,41.71667,44.81667,Georgian
+GH,GHA,Ghana,Ghana,0,Africa,5.55,-0.25,English
+GI,GIB,Gibraltar,Gibraltar,0,Europe,36.13334,-5.35,English
+GN,GIN,Guinea,Guinée,0,Africa,9.516666,-15.71667,French
+GP,GLP,Guadeloupe,Guadeloupe,0,America,16.0,-61.73333,French
+GM,GMB,Gambia,Gambie,0,Africa,13.46667,-16.65,English
+GW,GNB,Guinea-Bissau,Guinée-Bissau,0,Africa,11.86667,-15.65,Portuguese
+GQ,GNQ,Equatorial Guinea,Guinée équatoriale,0,Africa,3.75,8.8,Spanish
+GR,GRC,Greece,Grèce,0,Europe,38.0,23.73333,Greek
+GD,GRD,Grenada,Grenade,0,America,12.06667,-61.73333,English
+GL,GRL,Greenland,Groenland,0,America,64.18333,-51.73333,Greenlandic
+GT,GTM,Guatemala,Guatemala,0,America,14.63333,-90.51667,Spanish
+GF,GUF,French Guiana,Guyane française,0,America,4.933333,-52.33333,French
+GY,GUY,Guyana,Guyana,0,America,6.766667,-58.16667,English
+HK,HKG,Hong Kong,Hong-Kong,0,Asia,22.26667,114.15,English
+HN,HND,Honduras,Honduras,0,America,14.08333,-87.23333,Spanish
+HR,HRV,Croatia,Croatie,0,Europe,45.8,15.96667,Serbo-Croatian
+HT,HTI,Haiti,Haïti,0,America,18.55,-72.33334,French
+HU,HUN,Hungary,Hongrie,1,Europe,47.5,19.05,Hungarian
+ID,IDN,Indonesia,Indonésie,0,Asia,-6.133333,106.75,Indonesian
+IN,IND,India,Inde,0,Asia,28.61667,77.21667,English
+IE,IRL,Ireland,Irlande,0,Europe,53.33333,-6.25,English
+IR,IRN,Iran,Iran,0,Asia,35.66667,51.43333,Persian
+IQ,IRQ,Iraq,Iraq,0,Asia,33.33333,44.43333,Arabic
+IS,ISL,Iceland,Islande,0,Europe,64.15,-21.96667,Icelandic
+IL,ISR,Israel,Israël,0,Asia,32.08333,34.76667,Hebrew
+IT,ITA,Italy,Italie,0,Europe,41.88334,12.5,Italian
+JM,JAM,Jamaica,Jamaïque,0,America,17.96667,-76.8,English
+JO,JOR,Jordan,Jordanie,0,Asia,31.95,35.93333,Arabic
+JP,JPN,Japan,Japon,0,Asia,35.66667,139.75,Japanese
+KZ,KAZ,Kazakstan,Kazakstan,1,Asia,51.17,71.47,Kazakh
+KE,KEN,Kenya,Kenya,0,Africa,-1.283333,36.83333,English
+KG,KGZ,Kyrgyzstan,Kirghizistan,1,Asia,42.9,74.6,Kyrgyz
+KH,KHM,Cambodia,Cambodge,0,Asia,11.58333,104.9167,Khmer
+KI,KIR,Kiribati,Kiribati,0,Pacific,1.383333,173.15,English
+KN,KNA,Saint Kitts and Nevis,Saint-Christophe-et-Niévès,0,America,17.28333,-62.71667,English
+KR,KOR,Korea,Corée du Sud,0,Asia,37.5,127.0,Korean
+KW,KWT,Kuwait,Koweït,0,Asia,29.33333,48.0,Arabic
+"LA,LAO,Lao People's Democratic Republic,""Lao, Rép. dém. Pop."",1,Asia,17.98333,102.6333,Lao"
+LB,LBN,Lebanon,Liban,0,Asia,33.86666,35.5,Arabic
+LR,LBR,Liberia,Libéria,0,Africa,6.333333,-10.76667,English
+LY,LBY,Libyan Arab Jamahiriya,Libye,0,Africa,32.73333,13.11667,Arabic
+LC,LCA,Saint Lucia,Sainte-Lucie,0,America,14.01667,-60.98333,English
+LK,LKA,Sri Lanka,Sri Lanka,0,Asia,6.916667,79.86667,Sinhala
+LS,LSO,Lesotho,Lesotho,1,Africa,-29.31667,27.48333,English
+LT,LTU,Lithuania,Lituanie,0,Europe,54.68333,25.31667,Lithuanian
+LU,LUX,Luxembourg,Luxembourg,1,Europe,49.6,6.15,French
+LV,LVA,Latvia,Lettonie,0,Europe,56.95,24.1,Latvian
+MO,MAC,Macau (Aomen),Macao (Aomen),0,Asia,22.27,113.56,Portuguese
+MA,MAR,Morocco,Maroc,0,Africa,34.03333,-6.85,Arabic
+"MD,MDA,""Moldova, Rep.of"",Moldavie,0,Europe,47.0,28.83333,Romanian"
+MG,MDG,Madagascar,Madagascar,0,Africa,-18.86667,47.5,French
+MV,MDV,Maldives,Maldives,0,Asia,4.166667,73.46667,Maldivian
+MX,MEX,Mexico,Mexique,0,America,19.41667,-99.16666,Spanish
+MH,MHL,Marshall Islands,Marshall,0,Pacific,7.15,171.2,English
+MK,MKD,Macedonia (the former Yugoslav Rep. of),Macédoine,1,Europe,42.0,21.46667,Macedonian
+ML,MLI,Mali,Mali,1,Africa,12.66667,-7.983333,French
+MT,MLT,Malta,Malte,0,Europe,35.9,14.53333,English
+MM,MMR,Burma,Birmanie,0,Asia,16.78333,96.16666,Burmese
+MN,MNG,Mongolia,Mongolie,1,Asia,47.9,106.8667,Mongolian
+MP,MNP,Northern Mariana Islands,Îles Mariannes du Nord,0,Pacific,15.2,145.75,English
+MZ,MOZ,Mozambique,Mozambique,0,Africa,-25.96667,32.58333,Portuguese
+MR,MRT,Mauritania,Mauritanie,0,Africa,18.15,-15.96667,Arabic
+MS,MSR,Montserrat,Montserrat,0,America,16.7,-62.21667,English
+MQ,MTQ,Martinique,Martinique,0,America,14.6,-61.08333,French
+MU,MUS,Mauritius,Maurice,0,Africa,-20.16667,57.5,English
+MW,MWI,Malawi,Malawi,1,Africa,-13.96667,33.81667,English
+MY,MYS,Malaysia,Malaisie,0,Asia,3.133333,101.7,Malay
+,NAM,Namibia,Namibie,0,Africa,-22.56667,17.1,English
+NC,NCL,New Caledonia,Nouvelle-Calédonie,0,Pacific,-22.26667,166.45,French
+NE,NER,Niger,Niger,1,Africa,13.53333,2.083333,French
+NF,NFK,Norfolk Island,Île Norfolk,0,Pacific,-29.05,167.9667,English
+NG,NGA,Nigeria,Nigéria,0,Africa,9.18,7.17,English
+NI,NIC,Nicaragua,Nicaragua,0,America,12.1,-86.3,Spanish
+NU,NIU,Niue,Nioué,0,Pacific,-19.01667,-169.9167,Niuean
+NL,NLD,Netherlands,Pays-Bas,0,Europe,52.35,4.9,Dutch
+NO,NOR,Norway,Norvège,0,Europe,59.91667,10.75,Norwegian
+NP,NPL,Nepal,Népal,1,Asia,27.7,85.31667,Nepali
+NR,NRU,Nauru,Nauru,0,Pacific,-0.5333334,166.9167,Nauruan
+NZ,NZL,New Zealand,Nouvelle-Zélande,0,Pacific,-44.28333,174.7833,English
+OM,OMN,Oman,Oman,0,Asia,23.61667,58.63334,Arabic
+PK,PAK,Pakistan,Pakistan,0,Asia,33.66667,73.13333,Urdu
+PS,PAL,Palestine,Palestine,0,Asia,31.53,34.44,Arabic
+PA,PAN,Panama,Panama,0,America,8.95,-79.5,Spanish
+PN,PCN,Pitcairn,Pitcairn,0,Pacific,-25.06667,-130.0833,English
+PE,PER,Peru,Pérou,0,America,-12.1,-77.05,Spanish
+PH,PHL,Philippines,Philippines,0,Asia,14.61667,120.9667,English
+PW,PLW,Palau,Palaos,0,Pacific,7.333333,134.4833,English
+PG,PNG,Papua New Guinea,Papouasie-Nouvelle-Guinée,0,Pacific,-9.5,147.1167,English
+PL,POL,Poland,Pologne,0,Europe,52.25,21.0,Polish
+PR,PRI,Puerto Rico,Porto Rico,0,America,18.44,-66.13,English
+"KP,PRK,""Korea, Dem. People's Rep. of"",Corée du Nord,0,Asia,39.0,125.7833,Korean"
+PT,PRT,Portugal,Portugal,0,Europe,38.73333,-9.133333,Portuguese
+PY,PRY,Paraguay,Paraguay,1,America,-25.25,-57.66667,Spanish
+PF,PYF,French Polynesia,Polynésie française,0,Pacific,-17.53333,-149.5667,French
+QA,QAT,Qatar,Qatar,0,Asia,25.25,51.53333,Arabic
+RE,REU,Reunion,Réunion,0,Africa,-20.86667,55.46667,French
+RO,ROM,Romania,Roumanie,0,Europe,44.41667,26.11667,Romanian
+RU,RUS,Russian Federation,Russie,0,Asia,55.75,37.7,Russian
+RW,RWA,Rwanda,Rwanda,1,Africa,-1.933333,30.06667,French
+SA,SAU,Saudi Arabia,Arabie saoudite,0,Asia,24.65,46.76667,Arabic
+SD,SDN,Sudan,Soudan,0,Africa,15.55,32.53333,Arabic
+SN,SEN,Senegal,Sénégal,0,Africa,14.63333,-17.45,French
+SG,SGP,Singapore,Singapour,0,Asia,1.283333,103.85,English
+SH,SHN,Saint Helena,Sainte-Hélène,0,Africa,-15.91667,-5.7,English
+SB,SLB,Solomon Islands,Îles Salomon,0,Pacific,-9.466666,159.95,English
+SL,SLE,Sierra Leone,Sierra Leone,0,Africa,8.5,-13.28333,English
+SV,SLV,El Salvador,Salvador,0,America,13.66667,-89.16666,Spanish
+SM,SMR,San Marino,Saint-Marin,0,Europe,43.95,12.49,Italian
+SO,SOM,Somalia,Somalie,0,Africa,2.033333,45.35,Somali
+PM,SPM,St. Pierre and Miquelon,Saint-Pierre-et-Miquelon,0,America,46.66667,-56.16667,French
+ST,STP,Sao Tome and Principe,Sao Tomé-et-Principe,0,Africa,0.2,6.716667,Portuguese
+SR,SUR,Suriname,Suriname,0,America,5.866667,-55.23333,Dutch
+SK,SVK,Slovakia,Slovaquie,1,Europe,48.16667,17.16667,Slovak
+SI,SVN,Slovenia,Slovénie,0,Europe,46.06667,14.5,Slovenian
+SE,SWE,Sweden,Suède,0,Europe,59.33333,18.08333,Swedish
+SZ,SWZ,Swaziland,Swaziland,1,Africa,-26.33333,31.13333,Swati
+SC,SYC,Seychelles,Seychelles,0,Africa,-4.633333,55.46667,English
+SY,SYR,Syrian Arab Republic,Syrie,0,Asia,33.5,36.31667,Arabic
+TC,TCA,Turks and Caicos Islands,Îles Turks et Caïques,0,America,21.46667,-71.13333,English
+TD,TCD,Chad,Tchad,1,Africa,12.16667,14.98333,French
+TG,TGO,Togo,Togo,0,Africa,6.166667,1.35,French
+TH,THA,Thailand,Thaïlande,0,Asia,13.73333,100.5,Thai
+TJ,TJK,Tajikistan,Tadjikistan,1,Asia,38.63334,68.85,Tajik
+TK,TKL,Tokelau,Tokelaou,0,Pacific,-9.0,-172.0,Tokelauan
+TM,TKM,Turkmenistan,Turkménistan,1,Asia,37.95,58.38334,Turkmen
+TP,TMP,East Timor,Timor Oriental,0,Asia,-8.57,125.58,Tetum
+TO,TON,Tonga,Tonga,0,Pacific,-21.15,-175.2333,Tongan
+TT,TTO,Trinidad and Tobago,Trinité-et-Tobago,0,America,10.63333,-61.51667,English
+TN,TUN,Tunisia,Tunisie,0,Africa,36.83333,10.21667,Arabic
+TR,TUR,Turkey,Turquie,0,Europe,39.93,32.85,Turkish
+TV,TUV,Tuvalu,Tuvalu,0,Pacific,-8.5,179.2,Tuvaluan
+TW,TWN,Taiwan,Taïwan,0,Asia,25.08333,121.5333,Chinese
+"TZ,TZA,""Tanzania, United Rep. of "",Tanzanie,0,Africa,-6.17,35.74,English"
+UG,UGA,Uganda,Ouganda,1,Africa,0.3333333,32.58333,English
+UA,UKR,Ukraine,Ukraine,0,Europe,50.41667,30.5,Ukrainian
+UY,URY,Uruguay,Uruguay,0,America,-34.91667,-56.16667,Spanish
+US,USA,United States of America,Etats-Unis d'Amérique,0,America,38.867,-77.0,English
+UZ,UZB,Uzbekistan,Ouzbékistan,1,Asia,41.26667,69.21667,Uzbek
+VC,VCT,Saint Vincent and the Grenadines,Saint-Vincent-et-les Grenadines,0,America,13.2,-61.23333,English
+VE,VEN,Venezuela,Venezuela,0,America,10.58333,-66.93333,Spanish
+VG,VGB,British Virgin Islands,Îles Vierges britanniques,0,America,18.45,-64.61667,English
+VN,VNM,Viet Nam,Viet Nam,0,Asia,21.01667,105.8667,Vietnamese
+VU,VUT,Vanuatu,Vanuatu,0,Pacific,-17.75,168.3,English
+WF,WLF,Wallis and Futuna,Îles Wallis et Futuna,0,Pacific,-13.3,-176.2,French
+WS,WSM,Samoa,Samoa,0,Pacific,-13.8,171.75,Samoan
+YE,YEM,Yemen,Yémen,0,Asia,15.4,44.23333,Arabic
+YU,YUG,Serbia and Montenegro,Serbie et Monténégro (ex-Yougoslavie),0,Europe,44.83333,20.5,Serbo-Croatian
+ZA,ZAF,South Africa,Afrique du Sud,0,Africa,-25.73,28.22,English
+"ZR,ZAR,Congo (Democratic Republic of the),""Congo, Rép. dém. du"",0,Africa,-4.3,15.3,French"
+ZM,ZMB,Zambia,Zambie,1,Africa,-15.46667,28.26667,English
+ZW,ZWE,Zimbabwe,Zimbabwe,1,Africa,-17.83333,31.05,English
