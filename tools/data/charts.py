@@ -284,6 +284,7 @@ def box(df, x, y, color=None, titre=None, points='outliers', palette=None):
             x=df[mask][x],
             y=df[mask][y],
             name=str(groupe),
+            width=0.4,
             marker_color=couleurs[i % len(couleurs)],
             boxpoints=points
         ))
@@ -343,7 +344,7 @@ def histo(df, x, color=None, titre=None, bins=30, barmode='overlay', palette=Non
 
 
 # ── Heatmap (corrélation) ────────────────────────────────────────────────────────
-def heatmap_corr(df, titre='Matrice de corrélation', palette='RdBu'):
+def heatmap_corr(df, titre='Matrice de corrélation', palette='RdBu_r'):
     """
     Trace une heatmap de la matrice de corrélation du DataFrame (seaborn).
     Masque automatiquement le triangle supérieur pour la lisibilité.
@@ -351,7 +352,7 @@ def heatmap_corr(df, titre='Matrice de corrélation', palette='RdBu'):
     Args:
         df (pd.DataFrame): Données (colonnes numériques uniquement).
         titre (str): Titre du graphique.
-        palette (str): Palette divergente ex: 'RdBu', 'RdYlGn', 'coolwarm'.
+        palette (str): Palette divergente ex: 'RdBu_r', 'RdYlGn', 'coolwarm'.
 
     Returns:
         None: Affiche le graphique.
