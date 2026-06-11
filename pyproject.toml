@@ -11,8 +11,9 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "plotly",
-    "scipy"
+    "scipy",
+    "scikit-learn"
 ]
 
 [tool.setuptools.packages.find]
-where = ["."] # Il va trouver automatiquement 'data' et 'io'
+where = ["."]
