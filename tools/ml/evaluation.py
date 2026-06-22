@@ -21,7 +21,7 @@ from sklearn.metrics import (
 )
 
 
-def evaluate_model(model, X, y, target_names, methode_score, title="Matrice de confusion"):
+def evaluate_model(model, X, y, target_names, methode_score, title="Matrice de confusion", roc=True):
     """
     Affiche la matrice de confusion, la courbe ROC, et calcule un score.
 
@@ -68,21 +68,22 @@ def evaluate_model(model, X, y, target_names, methode_score, title="Matrice de c
     # --- Courbe ROC ---
     # predict_proba renvoie une colonne de probabilité par classe.
     # On retrouve l'index de la colonne correspondant à True (notre classe d'intérêt).
-    y_proba = model.predict_proba(X)
-    pos_idx = list(model.classes_).index(True)
-    y_score = y_proba[:, pos_idx]  # probabilité d'être "True"
+    if roc:
+        y_proba = model.predict_proba(X)
+        pos_idx = list(model.classes_).index(True)
+        y_score = y_proba[:, pos_idx]  # probabilité d'être "True"
 
-    fpr, tpr, _ = roc_curve(y, y_score)
-    auc = roc_auc_score(y, y_score)
+        fpr, tpr, _ = roc_curve(y, y_score)
+        auc = roc_auc_score(y, y_score)
 
-    plt.figure(figsize=(6, 6), dpi=100)
-    plt.plot(fpr, tpr, label=f"AUC = {auc:.4f}")
-    plt.plot([0, 1], [0, 1], linestyle='--', color='gray', label="Hasard")
-    plt.xlabel("Taux de faux positifs (FPR)")
-    plt.ylabel("Taux de vrais positifs (TPR)")
-    plt.title("Courbe ROC")
-    plt.legend()
-    plt.show()
+        plt.figure(figsize=(6, 6), dpi=100)
+        plt.plot(fpr, tpr, label=f"AUC = {auc:.4f}")
+        plt.plot([0, 1], [0, 1], linestyle='--', color='gray', label="Hasard")
+        plt.xlabel("Taux de faux positifs (FPR)")
+        plt.ylabel("Taux de vrais positifs (TPR)")
+        plt.title("Courbe ROC")
+        plt.legend()
+        plt.show()
 
     # --- Score demandé ---
     if methode_score == "accuracy":
