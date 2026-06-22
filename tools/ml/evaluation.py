@@ -76,7 +76,7 @@ def evaluate_model(model, X, y, target_names, methode_score, title="Matrice de c
     auc = roc_auc_score(y, y_score)
 
     plt.figure(figsize=(6, 6), dpi=100)
-    plt.plot(fpr, tpr, label=f"AUC = {auc:.2f}")
+    plt.plot(fpr, tpr, label=f"AUC = {auc:.4f}")
     plt.plot([0, 1], [0, 1], linestyle='--', color='gray', label="Hasard")
     plt.xlabel("Taux de faux positifs (FPR)")
     plt.ylabel("Taux de vrais positifs (TPR)")
