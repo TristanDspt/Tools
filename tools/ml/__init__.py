@@ -1,1 +1,1 @@
-from .evaluation import evaluate_model
+from .modeling import evaluate_model, custom_pipeline
